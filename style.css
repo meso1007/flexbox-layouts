@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:  0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    min-height: 80px;
+    background-color: black;
+    padding-top: 17px;
+    position: sticky;
+    min-width: 100%;
+}
+
+nav > a{
+    vertical-align: bottom;
+}
+
+nav img {
+    max-height: 40px;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+nav ul li a:link {
+    color: skyblue;
+}
+
+nav ul li a:visited{
+    color: skyblue;
+}
+
+nav ul li a:hover,
+#current-page:hover{
+    color: rgb(229, 142, 0);
+}
+
+nav ul li a:active
+#current-page:active{
+    color: rgb(97, 229, 0);
+}
+
+.sticky-button {
+    right: 30px;
+    bottom: 50px;
+    position: fixed;
+    padding: 30px 30px;
+    background-color: skyblue;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+#services-menu{
+    display: inline-block;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 2;
+    padding: 0px 16px;
+    background-color: #225555;
+    padding-left: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2csscssvh);
+    transition: opacity 0.3s, transform 0.15s;
+}
+
+#services-menu a {
+    display: block;
+    white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+} 
+
+.dropdown:hover #services-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+header {
+    padding-top: 90px;
+}
+
+header h1{
+    width: 100vw;
+    display: inline-block;
+    padding-top: 12px;
+    text-align: center;
+}
+
+aside{
+    background-color: #161f27;
+    padding: 12px;
+    vertical-align: top;
+    width: calc(100% - 1200px - 4px);
+    text-align: center;
+    height: 100%;
+    display: inline-block;
+}
+
+aside h2{
+    color: white;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+aside ul{
+    margin-top: 30px;
+    /* color: skyblue; */
+    /* margin-bottom = 100% of parent (ul) - Heigh of sibling (h2) - Sum of the height of the <li> elements */
+    margin-bottom: 300px;
+    font-size: 20px;
+}
+
+#aside-menu a:link,
+#aside-menu a:visited {
+    color: skyblue;
+}
+
+aside ul li{
+    margin-bottom: 10px;
+}
+
+main {
+    min-height: 1180px;
+    padding: 24px;
+    text-align: center;
+}
+
+main h2{
+    margin-bottom: 10px;
+}
+
+article p{
+    margin-top: 16px;
+}
+
+
+
+#current-page {
+    color: aquamarine;
+}
+
+footer{
+    padding: 16px;
+    min-height: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    margin: 16px;
+    max-height: 48px;
+    background-color: white;
+}
+
+.horizonal-line {
+    border-bottom: solid 1px white;
+    margin-bottom: 20px; 
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:  skyblue;
+    font-size: 20px;
+    gap: 15px;
+}
+
+footer ul li{
+    display: flex;
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 16px;
+}

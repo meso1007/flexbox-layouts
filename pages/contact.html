@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Basic Nav Example</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#">
+            <picture>
+                <!--First try to laod the SVG version of the logo-->
+                <source srcset="./assets/logo/ECO_logo.svg" type="img/svg+xml"/>
+                <!--SVG doesn't work, then try the PNG version-->
+                <source srcset="assets/logo/ECO_logo_big.png" type="image/png">
+                <!--PNG doesn't work, then try the JPG version-->
+                <img src="assets/logo/ECO_logo_big.jpg" alt="image/jpeg"/>
+            </picture>
+        </a>
+        <span class="spacer"></span>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li id="last-item"><a href="./pages/services.html">Services</a></li>
+            <li id="contact-page"><a href="#" id="current-page">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 style="text-align: center;">My Webpage</h1>
+
+    </header>
+    <footer>
+        <ul>
+            <li> <a href="#"></a>FAQ</li>
+            <li><a href="#"></a>Terms</li>
+            <li><a href="#"></a>Privacy</li>
+            <li><a href="#"></a>Cookies</li>
+        </ul>
+        <div class="horizonal-line"></div>
+        <p class="mywebpage" style="font-family: 'Times New Roman', Times, serif, sans-serif">
+            &copy; 2024 My Webpage
+        </p>
+    </footer>
+</body>
+</html>
